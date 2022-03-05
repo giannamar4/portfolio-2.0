@@ -1,0 +1,22 @@
+body {
+  font-family: "Signika", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(233, 225, 225);
+}
+
+#name {
+  text-align: center;
+  margin-top: 30vh;
+  font-family: "Redressed", cursive;
+  font-size: 7em;
+  text-shadow: 4px 4px rgb(255, 255, 255);
+  &:hover {
+  }
+}
+
+#brief {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 500;
+}
