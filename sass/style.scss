@@ -1,8 +1,11 @@
-body {
+$pinkie: rgb(233, 163, 184);
+$babyblue: rgb(177, 206, 219);
+$lightgreyz: rgb(219, 219, 219);
+#bootstrapOverride {
   font-family: "Signika", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: rgb(233, 225, 225);
+  background-color: rgb(219, 219, 219);
 }
 
 #name {
@@ -12,6 +15,7 @@ body {
   font-size: 7em;
   text-shadow: 4px 4px rgb(255, 255, 255);
   &:hover {
+    color: rgb(233, 163, 184);
   }
 }
 
@@ -19,4 +23,73 @@ body {
   text-align: center;
   font-size: 1.4em;
   font-weight: 500;
+}
+li a {
+  font-size: 1.3em !important;
+}
+
+.navbar-brand {
+  font-size: 1.3em !important;
+}
+.active {
+  background-color: rgb(233, 163, 184) !important;
+}
+
+.about {
+  color: rgb(177, 206, 219);
+  text-align: center;
+  font-family: "Redressed", cursive;
+  font-size: 6.3em;
+  text-shadow: 3px 2px black;
+  &:hover {
+    color: rgb(233, 163, 184);
+  }
+}
+
+.page1 {
+  padding-bottom: 40em;
+}
+
+.page2 {
+  background-color: rgb(236, 233, 233);
+}
+
+.card-title {
+  font-size: 1.4em;
+}
+.btn:hover {
+  background-color: $pinkie !important;
+}
+
+.skills {
+  .progress {
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+
+    .skill {
+      padding: 10px 0;
+      margin: 0;
+      text-transform: uppercase;
+      display: block;
+      font-weight: 500;
+      font-family: sans-serif;
+      color: black;
+
+      .val {
+        float: right;
+        font-style: normal;
+      }
+    }
+  }
+
+  .progress-bar-wrap {
+    background: #040404;
+  }
+
+  .progress-bar {
+    height: 10px;
+    background: $babyblue;
+  }
 }

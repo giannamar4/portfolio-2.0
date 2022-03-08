@@ -9,20 +9,119 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Butterfly+Kids&family=Emilys+Candy&family=Redressed&family=Shizuru&family=Signika:wght@300&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Gianna Marotta</title>
 </head>
-<body>
+<body id="bootstrapOverride">
+    <!-- nav bar -->
+    <!-- <nav class="navigation">
+    
+        <a>Home</a>
+        <a>About</a>
+        <a>Resume</a>
+        <a>Projects</a>
+        <a>Contact</a>
+    
+    </nav> -->
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Portfolio</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
     <!--cover page -->
- 
+ <section class="page1">
 <h1 id="name">Gianna Marotta</h1>
 <p id="brief">First year coding student and graduating high school senior.</p>
-
+</section>
     <!-- about me -->
-<h1>About Me</h1>
-    <!-- skills -->
 
+<section class="page2">
+<h1 class="about">About Me</h1>
+
+<div class="card" style="max-width: 40em;max-height:60em;margin-left: 23vw; font-size: 1.5em;">
+    <div class="row g-0">
+        <div class="col-sm-5">
+            <img src="images/gianna.jpg" class="card-img-top h-100" width="100%" height="100%" style="border:2px solid black;" alt="Gianna Marotta">
+        </div>
+        <div class="col-sm-7">
+            <div class="card-body">
+                <h5 class="card-title">Gianna Marotta</h5>
+                <p class="card-text">Hello! I am a future ASU computer science student this fall. My career goals are to become an indie game developer and a
+                dance company teacher.</p>
+                <a href="#" class="btn btn-primary stretched-link" style="font-size: 1em; background-color: rgb(177, 206, 219);color:black; border:2px solid black">View Portfolio</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- skills -->
+    <br><br>
+<h1 class="about">Skills</h1>
+
+<div id="skills" class="skills container">
+    
+    <div class="row skills-content">
+        <div class="col-lg-6">
+            <div class="progress">
+                <span class="skill">HTML<em class="val">85%</em></span>
+                <div class="progress-bar-wrap">
+                    <div class="progress-bar" style="width:85%"></div>
+                </div>
+            </div>
+
+            <div class="progress">
+                <span class="skill">CSS<em class="val">80%</em></span>
+                <div class="progress-bar-wrap">
+                    <div class="progress-bar" style="width:80%"></div>
+                </div>
+            </div>
+
+            <div class="progress">
+                <span class="skill">JS<em class="val">60%</em></span>
+                <div class="progress-bar-wrap">
+                    <div class="progress-bar" style="width:60%"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-lg-6">
+            <div class="progress">
+                <span class="skill">SASS<em class="val">75%</em></span>
+                <div class="progress-bar-wrap">
+                    <div class="progress-bar" style="width:75%"></div>
+                </div>
+            </div>
+
+            <div class="progress">
+                <span class="skill">jQuery<em class="val">50%</em></span>
+                <div class="progress-bar-wrap">
+                    <div class="progress-bar" style="width:50%"></div>
+                </div>
+            </div>
+
+            <div class="progress">
+                <span class="skill">Bootstrap<em class="val">25%</em></span>
+                <div class="progress-bar-wrap">
+                    <div class="progress-bar" style="width:25%"></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
     <!-- resume -->
 
     <!-- portfolio -->
@@ -31,7 +130,7 @@
 
 
 
-<script src="js/script.js"></script>\
+<script src="js/script.js"></script>
 
 </body>
 </html>
