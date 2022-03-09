@@ -31,12 +31,12 @@
             <a class="navbar-brand" href="#">Portfolio</a>
         </div>
         <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="active"><a href="#name">Home</a></li>
+            <li><a href="#abt">About</a></li>
+            <li><a href="#skls">Skills</a></li>
+            <li><a href="#resu">Resume</a></li>
+            <li><a href="#pro">Projects</a></li>
+            <li><a href="#con">Contact</a></li>
         </ul>
     </div>
 </nav>
@@ -49,7 +49,7 @@
     <!-- about me -->
 
 <section class="page2">
-<h1 class="about">About Me</h1>
+<h1 class="about" id="abt">About Me</h1>
 
 <div class="card" style="max-width: 40em;max-height:60em;margin-left: 23vw; font-size: 1.5em;">
     <div class="row g-0">
@@ -61,7 +61,7 @@
                 <h5 class="card-title">Gianna Marotta</h5>
                 <p class="card-text">Hello! I am a future ASU computer science student this fall. My career goals are to become an indie game developer and a
                 dance company teacher.</p>
-                <a href="#" class="btn btn-primary stretched-link" style="font-size: 1em; background-color: rgb(177, 206, 219);color:black; border:2px solid black">View Portfolio</a>
+                <a href="https://giannamar4.github.io/portfolio/" class="btn btn-primary stretched-link" style="font-size: 1em; background-color: rgb(177, 206, 219);color:black; border:2px solid black">View Old Portfolio</a>
             </div>
         </div>
     </div>
@@ -69,7 +69,7 @@
 
     <!-- skills -->
     <br><br>
-<h1 class="about">Skills</h1>
+<h1 class="about" id="skls">Skills</h1>
 
 <div id="skills" class="skills container">
     
@@ -119,17 +119,94 @@
                     <div class="progress-bar" style="width:25%"></div>
                 </div>
             </div>
-        </div>
-
+        </div><br><br><br>
     </section>
+
+    
     <!-- resume -->
+    <h1 class="res" id="resu">Resume</h1>
+<section class="resume" id="resume">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="resume-title">About You</h3>
+                <div class="resume-item pb-0">
+                    <h4>Gianna Marotta</h4>
+                    <p><em>I am a student learning HTML,CSS and Javascript. I speak both English and Spanish. Some of my soft skills include: interpersonal communication, time management, and creativity. </em></p>
+                    <p>
+                    <ul>
+                        <li>(123)-456-789</li>
+                        <li>gmarot420@west-mec.org</li>
+                    </ul>
+                    </p>
+                </div>
+                <h3 class="resume-title">Education</h3>
+                <div class="resume-item">
+                    <!-- home school -->
+                    <h4>High School Diploma</h4>
+                    <h5>2018-2022</h5>
+                    <p><em>Sandra Day O'Connor</em></p>
+                    <p>Seal of biliteracy, honors</p>
+                </div>
 
+              
+            </div>
+            <div class="col-lg-6">
+               
+                <h3 class="resume-title">Professional Experience</h3>
+                <div class="resume-item">
+                    <h4>Hostess</h4>
+                    <h5>Oct 2020 - Oct 2021</h5>
+                    <p><em>Mochilero Kitchen</em></p>
+                    <!-- west mec glendale az -->
+                    <p>6791 W Happy Valley Rd #100, Peoria, AZ 85383</p>
+                    <ul>
+                        <li>Welcome guests in a warm and friendly manner.</li>
+                        <li>Seats guests and manage the seating chart.</li>
+                        <li>Monitors restaurant activity to determine seating and dining flow.</li>
+                        <li>Respond to guest inquiries and requests in a timely, friendly, and efficient manner.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     <!-- portfolio -->
+    <hr>
+    
+<div class="slidez">
+   
+        <h1 class="res" id="pro">Projects</h1>
+    <div id="slider">
+        <ul class="slides">
+        <a href="https://giannamar4.github.io/tic-tac-toe-game/"> <li class="slide slide1"><img src="images/tic.png" height="100%" width="100%"></li></a>
+        <a href="https://giannamar4.github.io/website-project/index.html"> <li class="slide slide2"><img src="images/website.png" height="100%" width="100%"></li></a>
 
+        <a href="https://giannamar4.github.io/calculator/"> <li class="slide slide3"><img src="images/calc.png" height="100%" width="100%"></li></a>
+          
+        </ul>
+    </div>
+</div><br><br>
+<section class='page2'>
     <!--contact form  -->
+<h1 class="about" id="con">Contact Me</h1>
+<div class="contactForm">
 
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name">
 
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name">
 
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Leave a message! :D" style="height:200px"></textarea>
+
+    <button id="buttons" onclick="submit()">Submit</button>
+    <button id="buttons" onclick="reset()">Reset</button>
+    </form>
+
+</div>
+</section>
 <script src="js/script.js"></script>
 
 </body>

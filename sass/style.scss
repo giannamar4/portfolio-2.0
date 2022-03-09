@@ -7,7 +7,13 @@ $lightgreyz: rgb(219, 219, 219);
   padding: 0;
   background-color: rgb(219, 219, 219);
 }
-
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 #name {
   text-align: center;
   margin-top: 30vh;
@@ -27,7 +33,9 @@ $lightgreyz: rgb(219, 219, 219);
 li a {
   font-size: 1.3em !important;
 }
-
+.nav {
+  position: fixed !important;
+}
 .navbar-brand {
   font-size: 1.3em !important;
 }
@@ -43,6 +51,17 @@ li a {
   text-shadow: 3px 2px black;
   &:hover {
     color: rgb(233, 163, 184);
+  }
+}
+
+.res {
+  text-align: center;
+  font-family: "Redressed", cursive;
+  font-size: 6.3em;
+  text-shadow: 3px 2px white;
+  &:hover {
+    color: $babyblue;
+    text-shadow: 2px 2px black;
   }
 }
 
@@ -91,5 +110,125 @@ li a {
   .progress-bar {
     height: 10px;
     background: $babyblue;
+  }
+}
+
+#slider {
+  width: 50rem;
+  height: 50rem;
+  overflow: hidden;
+  margin: auto;
+  .slides {
+    display: block;
+    width: 380rem;
+    height: 50rem;
+    margin: 0;
+    padding: 0;
+  }
+  .slide {
+    float: left;
+    list-style-type: none;
+    width: 50rem;
+    height: 50rem;
+  }
+}
+
+.slide1 {
+  background-color: thistle;
+}
+.slide2 {
+  background-color: rgb(229, 213, 182);
+}
+.slide3 {
+  background-color: rgb(161, 187, 156);
+}
+
+.contactForm {
+  border-radius: 5px;
+  font-size: 1.3em;
+  padding: 20px;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+#buttons {
+  background-color: $babyblue;
+  font-weight: 550;
+  padding: 0.8em 1.2em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#buttons:hover {
+  background-color: $pinkie;
+  color: black;
+}
+.resume {
+  .resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 1.4em;
+  }
+  .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid $pinkie;
+    position: relative;
+
+    h4 {
+      line-height: 18px;
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-family: sans-serif;
+      color: $pinkie;
+      margin-bottom: 10px;
+    }
+    h5 {
+      font-size: 16px;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 5px 15px;
+      display: inline-block;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    ul {
+      padding-left: 20px;
+      font-size: 1.4em;
+
+      li {
+        padding-bottom: 0;
+      }
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-radius: 50px;
+      left: -9px;
+      top: 0;
+      background: $pinkie;
+      border: 2px solid $pinkie;
+    }
   }
 }
